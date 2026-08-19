@@ -1,0 +1,21 @@
+{
+  "name": "js-ts-warmup",
+  "version": "1.0.0",
+  "description": "Async JavaScript and TypeScript fundamentals for test automation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "00": "node src/00-basics.js",
+    "01": "node src/01-promises.js",
+    "02": "node src/02-parallel.js",
+    "03": "node src/03-errors.js",
+    "04": "node src/04-report.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "ts": "npm run build && node dist/report.js",
+    "lint": "eslint .",
+    "mock": "node mock-server.js"
+  },
+  "keywords": ["javascript", "typescript", "async", "test-automation"],
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+
+    "rootDir": "ts",
+    "outDir": "dist",
+
+    // THE setting that matters. Turns on null/undefined checking, forbids
+    // implicit `any`, and is where ~90% of TypeScript's real value lives.
+    // Turning this off is the most common way teams end up with TypeScript
+    // that catches nothing.
+    "strict": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": ["ts/**/*.ts"]
+}
